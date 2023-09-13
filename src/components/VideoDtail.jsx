@@ -43,11 +43,12 @@ const VideoDtail = () => {
                   />
                 </Typography>
               </Link>
-              <Stack direction={"row"} gap={2}>
+              <Stack direction={"row"} gap={{ xs: 1, sm: 2 }}>
                 <Typography
                   color={"white"}
                   variant="body1"
                   sx={{ opacity: 0.8 }}
+                  fontSize={{ xs: "14px", sm: "16px" }}
                 >
                   {data?.items[0]?.statistics?.viewCount} Views
                 </Typography>
@@ -55,6 +56,7 @@ const VideoDtail = () => {
                   color={"white"}
                   variant="body1"
                   sx={{ opacity: 0.8 }}
+                  fontSize={{ xs: "14px", sm: "16px" }}
                 >
                   {data?.items[0]?.statistics?.likeCount} Liks
                 </Typography>
